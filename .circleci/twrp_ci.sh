@@ -37,19 +37,17 @@ DEVICE="Redmi S2/Y2"
 CODENAME="ysl"
 
 # Put the url for the device tree on github and branch
-DEVICE_TREE="https://github.com/ItsVixano/android_device_xiaomi_ysl_twrp"
+DEVICE_TREE="https://github.com/shenprjkt/twrp_device_xiaomi_ysl"
 DEVICE_BRANCH="android-9.0-official"
 
 # Check https://github.com/minimal-manifest-twrp/platform_manifest_twrp_omni branches for that
-TWRP_VERSION="twrp-9.0"
-USE_CUSTOM_MANIFEST="no"
+TWRP_VERSION="twrp-12.1" 
+USE_CUSTOM_MANIFEST="yes"
 
 # manifest setup
 if [ "$USE_CUSTOM_MANIFEST" = yes ];
 then
-	REPO_INIT="https://github.com/ItsVixano/platform_manifest_twrp_omni"
-else
-	REPO_INIT="https://github.com/minimal-manifest-twrp/platform_manifest_twrp_omni"
+	REPO_INIT="https://github.com/minimal-manifest-twrp/platform_manifest_twrp_aosp"
 fi
 
 # Telgram env setup
