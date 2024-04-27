@@ -87,7 +87,7 @@ tg_error() {
 build_twrp() {
 Start=$(date +"%s")
 
-. build/envsetup.sh && lunch omni_"$CODENAME"-eng && export ALLOW_MISSING_DEPENDENCIES=true
+. build/envsetup.sh && lunch twrp_"$CODENAME"-eng && export ALLOW_MISSING_DEPENDENCIES=true
 mka recoveryimage | tee error.log
 
 End=$(date +"%s")
