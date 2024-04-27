@@ -1,4 +1,5 @@
 # mount point   fstype device                                   device2          flags
+
 /boot           emmc   /dev/block/bootdevice/by-name/boot
 /cache          ext4   /dev/block/bootdevice/by-name/cache
 /recovery       emmc   /dev/block/bootdevice/by-name/recovery                    flags=backup=1
@@ -23,3 +24,4 @@
 # Removable storage
 /external_sd    auto   /dev/block/mmcblk1p1                                      flags=display="MicroSD";storage;wipeingui;removable
 /usb_otg        auto   /dev/block/sda1                          /dev/block/sda   flags=display="USB OTG";storage;wipeingui;removable
+
